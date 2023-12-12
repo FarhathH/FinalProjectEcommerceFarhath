@@ -1,10 +1,10 @@
 import './ecommerce.css';
 import {useState} from 'react';
 
-function NavBar(){
+function NavBar(props){
 
     const[navigationList, setNavigationList] = useState(
-        [
+        [ //list of items for nav bar
             "Cashmere",
             "Silk",
             "Snood",
@@ -14,14 +14,17 @@ function NavBar(){
         ]
     );
 
-
    
     return(
         <div className = "nav-bar">
-          <div className = "nav-section"></div>
-          
+            {navigationList.map((nav) =>{
+                return(
+                    <button className = "nav-section" onClick = {() => props.action(props.index)}>{nav}</button>
+                );
+            })}
         </div>
     );
+   
 }
 
 export default NavBar;

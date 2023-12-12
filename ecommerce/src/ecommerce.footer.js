@@ -8,9 +8,9 @@ function Footer(){
     return(
         <div className = "footer">
         <div className = "footer-section1">
-          <div>Link 1</div>
-          <div>Link 2</div>
-          <div>Link 3</div>
+          <a href=''>Link 1</a>
+          <a href=''>Link 2</a>
+          <a href=''>Link 3</a>
         </div>
         <div className = "footer-section2">
           <div>Address Line 1</div>
@@ -19,9 +19,9 @@ function Footer(){
           <div>Number</div>
         </div>
         <div className = "footer-section3">
-          <div>Link 1</div>
-          <div>Link 2</div>
-          <div>Link 3</div>
+            <a href=''>Link 1</a>
+            <a href=''>Link 2</a>
+            <a href=''>Link 3</a>
         </div>
       </div>
     );

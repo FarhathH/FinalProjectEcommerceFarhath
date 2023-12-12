@@ -22,21 +22,28 @@
 background-color: brown;
 display:flex;
 flex:0.1;
+align-items: center;
 }
 
 .search-bar{
     background-color: beige;
     display:flex;
     flex:0.8;
+    align-items: center;
+    
 }
 
 .basket{
     background-color: brown;
     display:flex;
     flex:0.1;
+    align-items: center;
     
 }
 
+/*
+    the nav bar for user to see selection of items.
+*/
 .nav-bar{
     display:flex;
     flex-direction: row;
@@ -47,8 +54,19 @@ flex:0.1;
 }
 
 .nav-section{
-    margin-left:4.5%;
-    margin-right:4.5%;
+    margin-left:4%;
+    margin-right:4%;
+    height:100%;
+    width:12%;
+    border:none;
+    background-color: blue;
+    
+    
+}
+
+.nav-section:hover{
+    cursor: pointer;
+    background-color: blueviolet;
 }
 
 .content{ /*displays content e.g. product selection, checkout*/
