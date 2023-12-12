@@ -39,7 +39,8 @@ function App(props) {
     const[selectedBtn, setSelectedBtn] = useState(products[0]);
 
     function ClickNavBtn(index){
-      setSelectedBtn(products[index])  
+      setSelectedBtn(products[index])
+      alert(index) //checking that the function works via onclick 
     }
 
 
