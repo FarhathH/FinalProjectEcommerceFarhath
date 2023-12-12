@@ -26,6 +26,10 @@ function App(props) {
         {
           title:"Shawls",
           price:"£15"
+        },
+        {
+          title:"Headscarfs",
+          price:"£15"
         }
 
       ]
@@ -43,9 +47,13 @@ function App(props) {
     <div className="App">
       <div className = "body">
         <Header/>
-        <NavBar/>
+        <NavBar
+          product = {products} action = {ClickNavBtn}
+        />
           <div className = "content">
-            <ProductPage product = {products} action = {ClickNavBtn}/>
+            <ProductPage 
+              product = {products} action = {ClickNavBtn}
+            />
           </div>
         <Footer/>
       </div>

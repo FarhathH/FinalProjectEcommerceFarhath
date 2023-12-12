@@ -2,7 +2,7 @@ import './ecommerce.css';
 import {useState} from 'react';
 import App from './App.js';
 
-function NavBar(product, action){
+function NavBar({product, action}){
 
     const[navigationList, setNavigationList] = useState(
         [ //list of items for nav bar
@@ -19,9 +19,9 @@ function NavBar(product, action){
    
     return(
         <div className = "nav-bar">
-            {navigationList.map((nav) =>{
+            {navigationList.map((nav, index) =>{ //map for generating nav-bar buttons
                 return(
-                    <button className = "nav-section" onClick = {() => action(product)}>{nav}</button>
+                    <button className = "nav-section" onClick = {() => action(index)}>{nav}</button>
                 );
             })}
         </div>
