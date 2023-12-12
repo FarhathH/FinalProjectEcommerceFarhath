@@ -10,10 +10,10 @@ import {useState} from 'react';
 function App(props) {
 
     const[products, setProducts] = useState(
-      [
+      [ //list for nav bar and product page
         {
           title:"Cashmere",
-          price:"£15"
+          price:"£5"
         },
         {
           title:"Silk",
@@ -21,15 +21,19 @@ function App(props) {
         },
         {
           title:"Snood",
-          price:"£15"
+          price:"£19"
         },
         {
           title:"Shawls",
-          price:"£15"
+          price:"£20"
         },
         {
           title:"Headscarfs",
-          price:"£15"
+          price:"£3"
+        },
+        {
+          title:"S",
+          price:"£34"
         }
 
       ]

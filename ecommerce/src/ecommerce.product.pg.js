@@ -8,6 +8,7 @@ function ProductPage({product}){
         <div>
             <div>{product.title}</div>
             <div>{product.price}</div>
+            
         </div>
          
     );
