@@ -1,4 +1,5 @@
 import './ecommerce.css';
+import './ecommerce.product.pg.js';
 import {useState} from 'react';
 import App from './App.js';
 

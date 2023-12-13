@@ -1,7 +1,7 @@
 import './ecommerce.css';
 
 /*
-    The main footer containing address and contact details
+    The main footer containing address and contact details.
 */
 
 function Footer(){

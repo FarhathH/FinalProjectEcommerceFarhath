@@ -8,13 +8,19 @@ function Header(){
     return(
         <div className = "header">
           <div className = "logo">
-            <div>Insert logo here</div>
+            <div>
+              Insert logo here
+            </div>
           </div>
           <div className = "search-bar">
-            <div>search</div>
+            <div className = "search-pls">
+              search
+            </div>
           </div>
           <div className = "basket">
-            <div>basket</div>
+            <button className = "basket-btn">
+              basket
+            </button>
           </div>
         </div>
     );

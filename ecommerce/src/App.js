@@ -9,46 +9,46 @@ import {useState} from 'react';
 
 function App(props) {
 
-    const[products, setProducts] = useState(
-      [ //list for nav bar and product page
-        {
-          title:"Cashmere",
-          price:"£5"
-        },
-        {
-          title:"Silk",
-          price:"£15",
-        },
-        {
-          title:"Snood",
-          price:"£19"
-        },
-        {
-          title:"Shawls",
-          price:"£20"
-        },
-        {
-          title:"Headscarfs",
-          price:"£3"
-        },
-        {
-          title:"S",
-          price:"£34"
-        }
-
-      ]
-    )
+  const[products, setProducts] = useState(
+    [ //list for nav bar and product page
+      {
+        id:0,
+        title:"Cashmere",
+        price:"£5"
+      },
+      {
+        id:1,
+        title:"Silk",
+        price:"£15",
+      },
+      {
+        id:2,
+        title:"Snood",
+        price:"£19"
+      },
+      {
+        id:3,
+        title:"Shawls",
+        price:"£20"
+      },
+      {
+        id:4,
+        title:"Headscarfs",
+        price:"£3"
+      },
+    ]
+  )
       
-    //For checking the index.
-    const[selectedBtn, setSelectedBtn] = useState(products[0]);
+  //For checking the index.
+  const[selectedBtn, setSelectedBtn] = useState(products[0]);
+  
+  function ClickNavBtn(index){
+    setSelectedBtn(products[index])
+    alert(selectedBtn.title)//checking that the function works via onclick 
+  }
 
-    function ClickNavBtn(index){
-      setSelectedBtn(products[index])
-      alert(index) //checking that the function works via onclick 
-    }
 
-
-  return (
+  return ( //displaying components I made separately.
     <div className="App">
       <div className = "body">
         <Header/>
@@ -57,6 +57,7 @@ function App(props) {
         />
           <div className = "content">
             <ProductPage 
+              
               product = {products} action = {ClickNavBtn}
             />
           </div>
