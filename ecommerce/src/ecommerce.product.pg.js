@@ -8,7 +8,7 @@ function ProductPage({product, action}){
         
         <div> {/*meant to display the info about product*/}
             <h2>{product.title}</h2>
-            <h2>{product.price}</h2>  
+             
         </div>
          
     );

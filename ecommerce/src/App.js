@@ -40,11 +40,13 @@ function App(props) {
   )
       
   //For checking the index.
-  const[selectedBtn, setSelectedBtn] = useState(products[0]);
+  const[selectedBtn, setSelectedBtn] = useState(products);
   
+  const[index, setIndex] = useState([])
   function ClickNavBtn(index){
     setSelectedBtn(products[index])
-    alert(selectedBtn.title)//checking that the function works via onclick 
+    alert(index)//checking that the function works via onclick 
+    console.log(products.title)
   }
 
 

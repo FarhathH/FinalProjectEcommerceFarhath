@@ -5,6 +5,8 @@ import App from './App.js';
 
 function NavBar({product, action}){
 
+    
+
    
     return(
         <div className = "nav-bar">
