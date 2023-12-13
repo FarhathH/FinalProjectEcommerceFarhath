@@ -6,8 +6,11 @@ function ProductPage({product, action}){
     return(
         
         
-        <div> {/*meant to display the info about product*/}
-            <h2>{product.title}</h2>
+        <div className = ""> {/*meant to display the info about product*/}
+            <h2>
+                <p>{product.title}</p>
+                <p>{product.price}</p>
+            </h2>
              
         </div>
          
