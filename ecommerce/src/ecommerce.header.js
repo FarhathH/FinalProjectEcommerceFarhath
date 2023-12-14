@@ -4,7 +4,7 @@ import './ecommerce.css';
 /*
     This is the main header component.
 */
-function Header(){
+function Header({togglePage, showBasket}){
     return(
         <div className = "header">
           <div className = "logo">
@@ -13,13 +13,13 @@ function Header(){
             </div>
           </div>
           <div className = "search-bar">
-            <div className = "search-pls">
-              search
-            </div>
+            <button className = "search-pls">
+              🔎
+            </button>
           </div>
           <div className = "basket">
-            <button className = "basket-btn">
-              basket
+            <button onClick={togglePage} className = "basket-btn">
+              🧺 
             </button>
           </div>
         </div>

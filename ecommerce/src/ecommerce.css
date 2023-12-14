@@ -34,6 +34,20 @@ justify-content: center;
     
 }
 
+.search-pls{
+    height:45%;
+    width: 10%;
+    font-size: 25px;
+}
+
+.search-pls:hover{
+    cursor: pointer;
+}
+
+
+/*
+    just for the basket where we can store what's added by the user.
+*/
 .basket{
     background-color: brown;
     display:flex;
@@ -42,6 +56,34 @@ justify-content: center;
     justify-content: center;
     
 }
+.basket-btn{
+    height:12vh;
+    width:12vw;
+    font-size: 25px;
+}
+
+.basket-btn:hover{
+    cursor: pointer;
+}
+
+.basket-display{
+    height:90%;
+    width:95%;
+    background-color: blueviolet;
+    margin-top:3%;
+}
+
+.category-list{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.specific-item{
+    margin:25%;
+}
+
 
 /*
     the nav bar for user to see selection of items.
