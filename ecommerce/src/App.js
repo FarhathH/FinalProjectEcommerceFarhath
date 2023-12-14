@@ -40,31 +40,8 @@ function App() {
       },
     ]
   )
+    
 
-    const[itemsInProductCategory, setItemsInProductCategory] = useState(
-      [
-        [
-          {},
-          {}
-        ],
-        [
-          {},
-          {}
-        ],
-        [
-          {},
-          {}
-        ],
-        [
-          {},
-          {}
-        ],
-        [
-          {},
-          {}
-        ]
-      ]
-    );
     
 
   //For selecting the product by index.
