@@ -81,7 +81,11 @@ justify-content: center;
 }
 
 .specific-item{
-    margin:25%;
+    margin:10%;
+}
+
+.addItem-btn{
+    background-color: crimson;
 }
 
 

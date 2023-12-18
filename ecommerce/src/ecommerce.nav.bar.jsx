@@ -1,5 +1,5 @@
 import './ecommerce.css';
-import ProductPage from './ecommerce.product.pg.js'; 
+import ProductPage from './ecommerce.product.pg.jsx'; 
 import {useState} from 'react';
 import App from './App.js';
 
