@@ -1,13 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 import './ecommerce.css';
-import Footer from './ecommerce.footer.js';
-import Header from './ecommerce.header.js';
-import NavBar from './ecommerce.nav.bar.js';
-import ProductPage from './ecommerce.product.pg.js';
+import Footer from './ecommerce.footer.jsx';
+import Header from './ecommerce.header.jsx';
+import NavBar from './ecommerce.nav.bar.jsx';
+import ProductPage from './ecommerce.product.pg.jsx';
 import {useState} from 'react';
 import picture from './testphoto.jpg';
-import Basket from './ecommerce.basket.js';
+import Basket from './ecommerce.basket.jsx';
 
 
 function App() {
