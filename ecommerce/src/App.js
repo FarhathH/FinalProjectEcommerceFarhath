@@ -1,13 +1,17 @@
 import logo from './logo.svg';
+//stylesheets
 import './App.css';
 import './ecommerce.css';
+
+//components to use in my website.
 import Footer from './ecommerce.footer.jsx';
 import Header from './ecommerce.header.jsx';
 import NavBar from './ecommerce.nav.bar.jsx';
 import ProductPage from './ecommerce.product.pg.jsx';
-import {useState} from 'react';
-import picture from './testphoto.jpg';
 import Basket from './ecommerce.basket.jsx';
+
+import {useState} from 'react'; //
+import picture from './testphoto.jpg'; //image for a test
 
 
 function App() {
@@ -15,114 +19,50 @@ function App() {
   const[products, setProducts] = useState(
     [ //list for nav bar and product page menu.
       {
-        picture: picture,
         title:"Cashmere",
-        specificItems: [ //product selection 
-                        <div className = "specific-item">
-                          <p>1</p>
-                        </div>, 
-                        <div className = "specific-item">
-                          <p>2</p>
-                        </div>, 
-                        <div className = "specific-item">
-                          <p>3</p>
-                        </div>, 
-                        <div className = "specific-item">
-                          <p>4</p>
-                        </div>, 
-                        <div className = "specific-item">
-                          <p>5</p>
-                        </div>
-                      ],
-        price:"£5"
+        specificItems: [//product selection
+                        {picture: picture, name:"1", price:"£5"}, 
+                        {picture: picture, name:"2", price:"£10"}, 
+                        {picture: picture, name:"3", price:"£15"}, 
+                        {picture: picture, name:"4", price:"£20"}, 
+                        {picture: picture, name:"5", price:"£25"}],
       },
       {
-        picture: picture,
         title:"Silk",
-        specificItems: [ //product selection 
-                        <div className = "specific-item">
-                          <p>6</p>
-                        </div>, 
-                        <div className = "specific-item">
-                          <p>7</p>
-                        </div>, 
-                        <div className = "specific-item">
-                          <p>8</p>
-                        </div>, 
-                        <div className = "specific-item">
-                          <p>9</p>
-                        </div>, 
-                        <div className = "specific-item">
-                          <p>10</p>
-                        </div>
-                      ],
-        price:"£15",
+        specificItems: [//product selection
+                        {picture: picture, name:"6", price:"£30"}, 
+                        {picture: picture, name:"7", price:"£35"}, 
+                        {picture: picture, name:"8", price:"£40"}, 
+                        {picture: picture, name:"9", price:"£45"}, 
+                        {picture: picture, name:"10", price:"£50"}],  
       },
       {
         picture: picture,
         title:"Snood",
-        specificItems: [ //product selection 
-                        <div className = "specific-item">
-                          <p>11</p>
-                        </div>, 
-                        <div className = "specific-item">
-                          <p>12</p>
-                        </div>, 
-                        <div className = "specific-item">
-                          <p>13</p>
-                        </div>, 
-                        <div className = "specific-item">
-                          <p>14</p>
-                        </div>, 
-                        <div className = "specific-item">
-                          <p>15</p>
-                        </div>
-                      ],
-        price:"£19"
+        specificItems: [ //product selection
+                        {picture: picture, name:"11", price:"£55"}, 
+                        {picture: picture, name:"12", price:"£60"}, 
+                        {picture: picture, name:"13", price:"£65"}, 
+                        {picture: picture, name:"14", price:"£70"}, 
+                        {picture: picture, name:"15", price:"£75"}],
       },
       {
-        picture: picture,
         title:"Shawls",
-        specificItems: [ //product selection
-                        <div className = "specific-item">
-                          <p>16</p>
-                        </div>, 
-                        <div className = "specific-item">
-                          <p>17</p>
-                        </div>, 
-                        <div className = "specific-item">
-                          <p>18</p>
-                        </div>, 
-                        <div className = "specific-item">
-                          <p>19</p>
-                        </div>, 
-                        <div className = "specific-item">
-                          <p>20</p>
-                        </div>
-                      ],
-        price:"£20"
+        specificItems: [//product selection
+                        {picture: picture, name:"16", price:"£80"}, 
+                        {picture: picture, name:"17", price:"£85"}, 
+                        {picture: picture, name:"18", price:"£90"}, 
+                        {picture: picture, name:"19", price:"£95"}, 
+                        {picture: picture, name:"20", price:"£100"}], 
       },
       {
-        picture: picture,
         title:"Headscarfs",
-        specificItems: [ //product selection
-                        <div className = "specific-item">
-                          <p>21</p>
-                        </div>, 
-                        <div className = "specific-item">
-                          <p>22</p>
-                        </div>, 
-                        <div className = "specific-item">
-                          <p>23</p>
-                        </div>, 
-                        <div className = "specific-item">
-                          <p>24</p>
-                        </div>, 
-                        <div className = "specific-item">
-                          <p>25</p>
-                        </div>
-                      ],
-        price:"£3"
+        specificItems: [//product selection
+                        {picture: picture, name:"21", price:"£105"}, 
+                        {picture: picture, name:"22", price:"£100"}, 
+                        {picture: picture, name:"23", price:"£115"}, 
+                        {picture: picture, name:"24", price:"£120"}, 
+                        {picture: picture, name:"25", price:"£125"}], 
       },
     ]
   )
@@ -133,31 +73,35 @@ function App() {
     
 
   //For selecting the product by index.
-  const[selectedProduct, setSelectedProduct] = useState(products);
+  const[selectedProduct, setSelectedProduct] = useState(products[0]);
   
   //array for adding items to basket page.
   const[basketList, setBasketList]=useState([]);
 
   //for picking out the items in a category.
-  const[currentCategory, setCurrentCategory] = useState(products.specificItems);
+  // const[currentCategory, setCurrentCategory] = useState(products.specificItems);
   
   //function for adding item to basket with onClick trigger
-  function AddToBasket(index){
-    let newItem = products[index]
+  function AddToBasket(item){
+    let newItem = { //variable that represents the item to be added.
+                    pic:item.picture,
+                    name:item.name,
+                    price:item.price
+                  }
     let temp = [...basketList]
     temp.push(newItem)
+    console.log(temp) //testing that temp variable has an item added.
     setBasketList(temp)
   }
   
   //This trigger when user clicks a button on the nav bar.
   function ClickNavBtn(index){
     setSelectedProduct(products[index])
-    setCurrentCategory(products.specificItems)
+    // setCurrentCategory(products.specificItems)
   }
 
   function BasketPageView(){ //for viewing the basket checkout page.
     setShowBasket(!showBasket); //creates a toggle for the basket button.
-
   }
 
 
@@ -168,22 +112,22 @@ function App() {
           togglePage = {BasketPageView}
         />
         <NavBar
-          product = {products} action = {ClickNavBtn}
+          products = {products} action = {ClickNavBtn}
         />
         <div className = "content">
           
           {showBasket == false && 
             <ProductPage //show when the condition is false.
-              product = {selectedProduct} action = {ClickNavBtn}
+              product = {selectedProduct} action = {ClickNavBtn} //view products available.
               addToCheckout = {AddToBasket}
-              item = {currentCategory}
+              // item = {currentCategory}
             />
           }
 
           {showBasket == true && 
-            <Basket
+            <Basket //show when the condition is true.
               basket = {basketList} //wanted the page to store items in basket.
-            /> //show when the condition is true.
+            /> 
           }
            
         </div>

@@ -69,23 +69,44 @@ justify-content: center;
 .basket-display{
     height:90%;
     width:95%;
+    border:5px solid maroon;
     background-color: blueviolet;
     margin-top:3%;
+    overflow: scroll;
+
 }
+
+
 
 .category-list{
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex:0.75;
+    
+    
+}
+
+
+/*
+    css stuff for the product info
+*/
+.specific-item{
+    border-radius: 10%;
+    margin:50%;
+    display:flex;
+    flex-direction: column;
     justify-content: center;
     
 }
 
-.specific-item{
-    margin:10%;
-}
-
 .addItem-btn{
     background-color: crimson;
+}
+
+.item-info{
+    margin:5%;
 }
 
 

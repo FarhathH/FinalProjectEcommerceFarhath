@@ -2,7 +2,7 @@ import './ecommerce.css';
 import {useState} from 'react';
 import App from './App.js';
 
-function ProductPage({product, addToCheckout, item}){
+function ProductPage({product, addToCheckout}){
 
    
    
@@ -11,22 +11,27 @@ function ProductPage({product, addToCheckout, item}){
         
         <div className = ""> {/*meant to display the info about product*/}
             <h2>
-                {/* <p>{product.picture}</p> */}
                 <p>{product.title}</p>
-                
-                {product.map((i,index) =>{
-                    return(
-                        <div className = "specific-item">
-                            <p className = "category-list">{i.specificItems}</p>
-                            {/*should add item into basket when button is clicked*/}
-                            <button onClick = {() => addToCheckout(index)}className = "addItem-btn">Add to basket</button>
-                        </div>
+            </h2>  
+                <div className = "category-list">
+                    {product.specificItems.map((item, index) =>{
+                        return(
+                            
+                            <div className = "specific-item">
+                                <img height={"100px"} width={"100px"} src = {item.picture}></img>
+                                <p className = "item-info">Product: {item.name}</p>
+                                <p className = "item-info">Price: {item.price}</p>
+                                {/*should add item into basket when button is clicked*/}
+                                <button onClick = {() => addToCheckout(item)}className = "addItem-btn">Add to basket</button>
+                            </div>
+                            
 
-                    );
+                        );
 
-                })}
+                    })}
+                </div>
 
-            </h2>
+            
              
         </div>
          

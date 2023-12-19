@@ -5,7 +5,39 @@ import './ecommerce.css';
 function Basket(basket){
     return(
         <div className = "basket-display">
-            <div>{basket.specificItem}</div>
+            <div>{basket.item}</div> {/*meant to display what in the basket*/}
+            <p>RERRERRERERERE</p>
+            <p>RERRERRERERERE</p>
+            <p>RERRERRERERERE</p>
+            <p>RERRERRERERERE</p>
+            <p>RERRERRERERERE</p>
+            <p>RERRERRERERERE</p>
+            <p>RERRERRERERERE</p>
+            <p>RERRERRERERERE</p>
+            <p>RERRERRERERERE</p>
+            <p>RERRERRERERERE</p>
+            <p>RERRERRERERERE</p>
+            <p>RERRERRERERERE</p>
+            <p>RERRERRERERERE</p>
+            <p>RERRERRERERERE</p>
+            <p>RERRERRERERERE</p>
+            <p>RERRERRERERERE</p>
+            <p>RERRERRERERERE</p>
+            <p>RERRERRERERERE</p>
+            <p>RERRERRERERERE</p>
+            <p>RERRERRERERERE</p>
+            <p>RERRERRERERERE</p>
+            <p>RERRERRERERERE</p>
+            <p>RERRERRERERERE</p>
+            <p>RERRERRERERERE</p>
+            <p>RERRERRERERERE</p>
+            <p>RERRERRERERERE</p>
+            <p>RERRERRERERERE</p>
+            <p>RERRERRERERERE</p>
+            <p>RERRERRERERERE</p>
+            <p>RERRERRERERERE</p>
+            <p>RERRERRERERERE</p>
+            <p>RERRERRERERERE</p>
         </div>
     );
 }
