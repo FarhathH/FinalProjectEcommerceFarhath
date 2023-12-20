@@ -90,8 +90,9 @@ function App() {
                   }
     let temp = [...basketList]
     temp.push(newItem)
-    console.log(temp) //testing that temp variable has an item added.
     setBasketList(temp)
+    console.log(basketList) //testing that temp variable has an item added.
+    
   }
   
   //This trigger when user clicks a button on the nav bar.

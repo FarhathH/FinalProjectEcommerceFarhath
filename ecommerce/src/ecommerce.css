@@ -13,21 +13,26 @@
 .header{ /*for the top section which should contain the logo, account and basket*/
     display:flex;
     flex:0.15;
-    background-color: blue;
+    background-color: #4E5166;
     flex-direction: row;
 }
 
 /*located in the header*/
 .logo{
-background-color: brown;
+background-color: #4E5166;
 display:flex;
 flex:0.2;
 align-items: center;
 justify-content: center;
 }
 
+.logo-name{
+    margin:10%;
+    color:white;
+}
+
 .search-bar{
-    background-color: beige;
+    background-color: #4E5166;
     display:flex;
     flex:0.8;
     align-items: center;
@@ -35,13 +40,13 @@ justify-content: center;
 }
 
 .search-pls{
-    height:45%;
-    width: 10%;
+    height:5vh;
+    width: 50vw;
     font-size: 25px;
 }
 
 .search-pls:hover{
-    cursor: pointer;
+    cursor: text;
 }
 
 
@@ -49,7 +54,7 @@ justify-content: center;
     just for the basket where we can store what's added by the user.
 */
 .basket{
-    background-color: brown;
+    background-color: #4E5166;
     display:flex;
     flex:0.2;
     align-items: center;
@@ -69,15 +74,24 @@ justify-content: center;
 .basket-display{
     height:90%;
     width:95%;
-    border:5px solid maroon;
-    background-color: blueviolet;
+    border:5px solid #7C90A0;
+    background-color: #B9B7A7;
     margin-top:3%;
     overflow: scroll;
 
 }
 
+.basket-item{
+    margin:10%;
+}
 
+.product-info{
+    color:black;
+}
 
+/*
+    css stuff for the product info
+*/
 .category-list{
     display:flex;
     flex-direction: column;
@@ -100,12 +114,22 @@ justify-content: center;
     justify-content: center;
     
 }
-
+/*
+    buttons for adding items to basket.    
+*/
 .addItem-btn{
-    background-color: crimson;
+    background-color: #846B8A;
+    border:none;
 }
 
-.item-info{
+.addItem-btn:hover{
+    scale:105%;
+    cursor: pointer;
+    font-size: bold;
+    transition: 0.1s;
+}
+
+.item-info{ /*for some padding/margin*/
     margin:5%;
 }
 
@@ -116,34 +140,51 @@ justify-content: center;
 .nav-bar{
     display:flex;
     flex-direction: row;
-    background-color: blue;
+    background-color: #7C90A0;
     width:100%;
     height:10%;
     align-items: center;
 }
 
 .nav-section{
-    margin-left:3%;
-    margin-right:3%;
+    margin-left:4%;
+    margin-right:4%;
     height:100%;
-    width:12%;
+    width:25%;
     border:none;
-    background-color: blue;
-    
+    background-color: #7C90A0;
+    color:white;
+    font-size: 110%;
+    transition: 0.1s;
     
 }
 
 .nav-section:hover{
     cursor: pointer;
-    background-color: blueviolet;
+    scale:101%;
+    transition: 0.1s;
+    font-weight: bolder;
+    box-shadow: inset;
 }
 
 .content{ /*displays content e.g. product selection, checkout*/
     display:flex;
     flex:0.7;
-    background-color: aquamarine;
+    background-color: #B5AA9D;
     color:black;
     justify-content: space-evenly;
+    overflow: scroll;
+}
+
+::-webkit-scrollbar{
+    width:10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #669BBC;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color:aquamarine;
 }
 
 .footer{ /*display address and contact details of company*/
@@ -155,26 +196,31 @@ justify-content: center;
 
 /*located in the footer*/
 .footer-section1{
-    background-color: blueviolet;
+    background-color: #747274;
     display:flex;
     flex-direction: column;
     flex:0.333;
     justify-content: center;
+    color:white;
 
 }
 
 .footer-section2{
-    background-color: pink;
+    border-left:1px dashed white;
+    background-color: #747274;
     display:flex;
     flex-direction: column;
     flex:0.333;
     justify-content: center;
+    color:white;
 }
 
 .footer-section3{
-    background-color: blueviolet;
+    border-left:1px dashed white;
+    background-color: #747274;
     display:flex;
     flex:0.333;
     flex-direction: column;
     justify-content: center;
+    color:white;
 }

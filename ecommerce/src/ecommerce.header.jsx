@@ -8,14 +8,12 @@ function Header({togglePage, showBasket}){
     return(
         <div className = "header">
           <div className = "logo">
-            <div>
-              Insert logo here
+            <div className = "logo-name">
+              World of Scarves
             </div>
           </div>
           <div className = "search-bar">
-            <button className = "search-pls">
-              🔎
-            </button>
+            <input type = "text" placeholder='search...' className = "search-pls"></input>
           </div>
           <div className = "basket">
             <button onClick={togglePage} className = "basket-btn">

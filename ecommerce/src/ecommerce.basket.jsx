@@ -2,42 +2,20 @@ import {useState} from "react";
 import './ecommerce.css';
 
 
-function Basket(basket){
+function Basket({basket}){ //uses the basketList array as a prop.
+    console.log(basket)
     return(
+
         <div className = "basket-display">
-            <div>{basket.item}</div> {/*meant to display what in the basket*/}
-            <p>RERRERRERERERE</p>
-            <p>RERRERRERERERE</p>
-            <p>RERRERRERERERE</p>
-            <p>RERRERRERERERE</p>
-            <p>RERRERRERERERE</p>
-            <p>RERRERRERERERE</p>
-            <p>RERRERRERERERE</p>
-            <p>RERRERRERERERE</p>
-            <p>RERRERRERERERE</p>
-            <p>RERRERRERERERE</p>
-            <p>RERRERRERERERE</p>
-            <p>RERRERRERERERE</p>
-            <p>RERRERRERERERE</p>
-            <p>RERRERRERERERE</p>
-            <p>RERRERRERERERE</p>
-            <p>RERRERRERERERE</p>
-            <p>RERRERRERERERE</p>
-            <p>RERRERRERERERE</p>
-            <p>RERRERRERERERE</p>
-            <p>RERRERRERERERE</p>
-            <p>RERRERRERERERE</p>
-            <p>RERRERRERERERE</p>
-            <p>RERRERRERERERE</p>
-            <p>RERRERRERERERE</p>
-            <p>RERRERRERERERE</p>
-            <p>RERRERRERERERE</p>
-            <p>RERRERRERERERE</p>
-            <p>RERRERRERERERE</p>
-            <p>RERRERRERERERE</p>
-            <p>RERRERRERERERE</p>
-            <p>RERRERRERERERE</p>
-            <p>RERRERRERERERE</p>
+            {basket.map((bas) => { //mapping through the basketList array that contains items.
+                return(
+                    <div className = "basket-item">
+                        <img width={"25px"} height={"25px"} src = {bas.pic}></img> {/*meant to display what in the basket*/}
+                        <div>{bas.name}</div> {/*meant to display what in the basket*/}
+                        <div>{bas.price}</div>
+                    </div>   
+                );
+            })} 
         </div>
     );
 }
