@@ -10,7 +10,6 @@ function ProductPage({product, addToCheckout}){ //the props used for this to wor
    
     return(
         
-        
         <div className = "product-info"> {/*meant to display the info about product*/}
             <h2>
                 <p>{product.title}</p> {/* will display the category title*/}
