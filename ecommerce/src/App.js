@@ -13,30 +13,35 @@ import Basket from './ecommerce.basket.jsx';
 import {useState} from 'react'; //
 import picture from './testphoto.jpg'; //image for a test
 
+//pictures for cashmere category
 import cashmere1 from './cashmere.jpg';
 import cashmere2 from './cashmere1.jpg';
 import cashmere3 from './cashmere2.jpg';
 import cashmere4 from './cashmere3.jpg';
 import cashmere5 from './cashmere4.jpg';
 
+//pictures for silk category
 import silk1 from './silk.jpg';
 import silk2 from './silk1.jpg';
 import silk3 from './silk2.jpg';
 import silk4 from './silk3.jpg';
 import silk5 from './silk4.jpg';
 
+//pictures for snood category
 import snood1 from './snood.jpg';
 import snood2 from './snood1.jpg';
 import snood3 from './snood2.jpg';
 import snood4 from './snood3.jpg';
 import snood5 from './snood4.jpg';
 
+//pictures for shawl category
 import shawl1 from './shawls.jpg';
 import shawl2 from './shawls1.jpg';
 import shawl3 from './shawls2.jpg';
 import shawl4 from './shawls3.jpg';
 import shawl5 from './shawls4.jpg';
 
+//pictures for headscarf category
 import headscarf1 from './headscarfs.jpg';
 import headscarf2 from './headscarfs1.jpg';
 import headscarf3 from './headscarfs2.jpg';

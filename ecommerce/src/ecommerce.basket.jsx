@@ -16,6 +16,8 @@ function Basket({basket}){ //uses the basketList array as a prop.
                     </div>   
                 );
             })} 
+
+            <div>Total cost:{}</div>
         </div>
     );
 }
