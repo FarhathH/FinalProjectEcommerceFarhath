@@ -13,6 +13,35 @@ import Basket from './ecommerce.basket.jsx';
 import {useState} from 'react'; //
 import picture from './testphoto.jpg'; //image for a test
 
+import cashmere1 from './cashmere.jpg';
+import cashmere2 from './cashmere1.jpg';
+import cashmere3 from './cashmere2.jpg';
+import cashmere4 from './cashmere3.jpg';
+import cashmere5 from './cashmere4.jpg';
+
+import silk1 from './silk.jpg';
+import silk2 from './silk1.jpg';
+import silk3 from './silk2.jpg';
+import silk4 from './silk3.jpg';
+import silk5 from './silk4.jpg';
+
+import snood1 from './snood.jpg';
+import snood2 from './snood1.jpg';
+import snood3 from './snood2.jpg';
+import snood4 from './snood3.jpg';
+import snood5 from './snood4.jpg';
+
+import shawl1 from './shawls.jpg';
+import shawl2 from './shawls1.jpg';
+import shawl3 from './shawls2.jpg';
+import shawl4 from './shawls3.jpg';
+import shawl5 from './shawls4.jpg';
+
+import headscarf1 from './headscarfs.jpg';
+import headscarf2 from './headscarfs1.jpg';
+import headscarf3 from './headscarfs2.jpg';
+import headscarf4 from './headscarfs3.jpg';
+import headscarf5 from './headscarfs4.jpg';
 
 function App() {
 
@@ -21,48 +50,48 @@ function App() {
       {
         title:"Cashmere",
         specificItems: [//product selection
-                        {picture: picture, name:"1", price:"£5"}, 
-                        {picture: picture, name:"2", price:"£10"}, 
-                        {picture: picture, name:"3", price:"£15"}, 
-                        {picture: picture, name:"4", price:"£20"}, 
-                        {picture: picture, name:"5", price:"£25"}],
+                        {picture: cashmere1, name:"1", price:"£5"}, 
+                        {picture: cashmere2, name:"2", price:"£10"}, 
+                        {picture: cashmere3, name:"3", price:"£15"}, 
+                        {picture: cashmere4, name:"4", price:"£20"}, 
+                        {picture: cashmere5, name:"5", price:"£25"}],
       },
       {
         title:"Silk",
         specificItems: [//product selection
-                        {picture: picture, name:"6", price:"£30"}, 
-                        {picture: picture, name:"7", price:"£35"}, 
-                        {picture: picture, name:"8", price:"£40"}, 
-                        {picture: picture, name:"9", price:"£45"}, 
-                        {picture: picture, name:"10", price:"£50"}],  
+                        {picture: silk1, name:"6", price:"£30"}, 
+                        {picture: silk2, name:"7", price:"£35"}, 
+                        {picture: silk3, name:"8", price:"£40"}, 
+                        {picture: silk4, name:"9", price:"£45"}, 
+                        {picture: silk5, name:"10", price:"£50"}],  
       },
       {
         picture: picture,
         title:"Snood",
         specificItems: [ //product selection
-                        {picture: picture, name:"11", price:"£55"}, 
-                        {picture: picture, name:"12", price:"£60"}, 
-                        {picture: picture, name:"13", price:"£65"}, 
-                        {picture: picture, name:"14", price:"£70"}, 
-                        {picture: picture, name:"15", price:"£75"}],
+                        {picture: snood1, name:"11", price:"£55"}, 
+                        {picture: snood2, name:"12", price:"£60"}, 
+                        {picture: snood3, name:"13", price:"£65"}, 
+                        {picture: snood4, name:"14", price:"£70"}, 
+                        {picture: snood5, name:"15", price:"£75"}],
       },
       {
         title:"Shawls",
         specificItems: [//product selection
-                        {picture: picture, name:"16", price:"£80"}, 
-                        {picture: picture, name:"17", price:"£85"}, 
-                        {picture: picture, name:"18", price:"£90"}, 
-                        {picture: picture, name:"19", price:"£95"}, 
-                        {picture: picture, name:"20", price:"£100"}], 
+                        {picture: shawl1, name:"16", price:"£80"}, 
+                        {picture: shawl2, name:"17", price:"£85"}, 
+                        {picture: shawl3, name:"18", price:"£90"}, 
+                        {picture: shawl4, name:"19", price:"£95"}, 
+                        {picture: shawl5, name:"20", price:"£100"}], 
       },
       {
         title:"Headscarfs",
         specificItems: [//product selection
-                        {picture: picture, name:"21", price:"£105"}, 
-                        {picture: picture, name:"22", price:"£100"}, 
-                        {picture: picture, name:"23", price:"£115"}, 
-                        {picture: picture, name:"24", price:"£120"}, 
-                        {picture: picture, name:"25", price:"£125"}], 
+                        {picture: headscarf1, name:"21", price:"£105"}, 
+                        {picture: headscarf2, name:"22", price:"£100"}, 
+                        {picture: headscarf3, name:"23", price:"£115"}, 
+                        {picture: headscarf4, name:"24", price:"£120"}, 
+                        {picture: headscarf5, name:"25", price:"£125"}], 
       },
     ]
   )

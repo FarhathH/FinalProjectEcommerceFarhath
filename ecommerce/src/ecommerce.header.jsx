@@ -1,5 +1,5 @@
 import './ecommerce.css';
-
+import BasketIcon from './basket-icon.jpeg';
 
 /*
     This is the main header component.
@@ -17,7 +17,7 @@ function Header({togglePage, showBasket}){
           </div>
           <div className = "basket">
             <button onClick={togglePage} className = "basket-btn">
-              🧺 
+              <img height={"25px"} width = {"25px"} src = {BasketIcon}></img> 
             </button>
           </div>
         </div>
