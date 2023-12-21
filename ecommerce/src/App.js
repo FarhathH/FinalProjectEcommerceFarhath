@@ -10,7 +10,7 @@ import NavBar from './ecommerce.nav.bar.jsx';
 import ProductPage from './ecommerce.product.pg.jsx';
 import Basket from './ecommerce.basket.jsx';
 
-import {useState} from 'react'; //
+import {useState} from 'react'; //importing useState for my arrays
 import picture from './testphoto.jpg'; //image for a test
 
 //pictures for cashmere category
@@ -55,48 +55,48 @@ function App() {
       {
         title:"Cashmere",
         specificItems: [//product selection
-                        {picture: cashmere1, name:"1", price:"£5"}, 
-                        {picture: cashmere2, name:"2", price:"£10"}, 
-                        {picture: cashmere3, name:"3", price:"£15"}, 
-                        {picture: cashmere4, name:"4", price:"£20"}, 
-                        {picture: cashmere5, name:"5", price:"£25"}],
+                        {picture: cashmere1, name:"1", price:"£5", value:5}, 
+                        {picture: cashmere2, name:"2", price:"£10", value:10}, 
+                        {picture: cashmere3, name:"3", price:"£15", value:15}, 
+                        {picture: cashmere4, name:"4", price:"£20", value:20}, 
+                        {picture: cashmere5, name:"5", price:"£25", value:25}],
       },
       {
         title:"Silk",
         specificItems: [//product selection
-                        {picture: silk1, name:"6", price:"£30"}, 
-                        {picture: silk2, name:"7", price:"£35"}, 
-                        {picture: silk3, name:"8", price:"£40"}, 
-                        {picture: silk4, name:"9", price:"£45"}, 
-                        {picture: silk5, name:"10", price:"£50"}],  
+                        {picture: silk1, name:"6", price:"£30", value:30}, 
+                        {picture: silk2, name:"7", price:"£35", value:35}, 
+                        {picture: silk3, name:"8", price:"£40", value:40}, 
+                        {picture: silk4, name:"9", price:"£45", value:45}, 
+                        {picture: silk5, name:"10", price:"£50", value:50}],  
       },
       {
         picture: picture,
         title:"Snood",
         specificItems: [ //product selection
-                        {picture: snood1, name:"11", price:"£55"}, 
-                        {picture: snood2, name:"12", price:"£60"}, 
-                        {picture: snood3, name:"13", price:"£65"}, 
-                        {picture: snood4, name:"14", price:"£70"}, 
-                        {picture: snood5, name:"15", price:"£75"}],
+                        {picture: snood1, name:"11", price:"£55", value:55}, 
+                        {picture: snood2, name:"12", price:"£60", value:60}, 
+                        {picture: snood3, name:"13", price:"£65", value:65}, 
+                        {picture: snood4, name:"14", price:"£70", value:70}, 
+                        {picture: snood5, name:"15", price:"£75", value:75}],
       },
       {
         title:"Shawls",
         specificItems: [//product selection
-                        {picture: shawl1, name:"16", price:"£80"}, 
-                        {picture: shawl2, name:"17", price:"£85"}, 
-                        {picture: shawl3, name:"18", price:"£90"}, 
-                        {picture: shawl4, name:"19", price:"£95"}, 
-                        {picture: shawl5, name:"20", price:"£100"}], 
+                        {picture: shawl1, name:"16", price:"£80", value:80}, 
+                        {picture: shawl2, name:"17", price:"£85", value:85}, 
+                        {picture: shawl3, name:"18", price:"£90", value:90}, 
+                        {picture: shawl4, name:"19", price:"£95", value:95}, 
+                        {picture: shawl5, name:"20", price:"£100", value:100}], 
       },
       {
         title:"Headscarfs",
         specificItems: [//product selection
-                        {picture: headscarf1, name:"21", price:"£105"}, 
-                        {picture: headscarf2, name:"22", price:"£100"}, 
-                        {picture: headscarf3, name:"23", price:"£115"}, 
-                        {picture: headscarf4, name:"24", price:"£120"}, 
-                        {picture: headscarf5, name:"25", price:"£125"}], 
+                        {picture: headscarf1, name:"21", price:"£105", value:105}, 
+                        {picture: headscarf2, name:"22", price:"£100", value:110}, 
+                        {picture: headscarf3, name:"23", price:"£115", value:115}, 
+                        {picture: headscarf4, name:"24", price:"£120", value:120}, 
+                        {picture: headscarf5, name:"25", price:"£125", value:125}], 
       },
     ]
   )

@@ -14,14 +14,13 @@ let basketList =  [
 let expectedOutput = 205
 let total = 0;
 
-
-//
-for(let i = 0; i < basketList.length-1;i++){
+//looping through the array
+for(let i = 0; i < basketList.length;i++){
   console.log(basketList[i].value)
   total+=basketList[i].value
 }
 
-
+//checking output is correct.
 console.log(basketList)
 console.log(total)
 console.log(total == expectedOutput)
